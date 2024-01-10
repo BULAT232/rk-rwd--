@@ -1,0 +1,201 @@
+@use "./ulits/reset";
+
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:wght@400;700&family=Inter&display=swap');
+
+
+*, *::after,
+*::before{
+  font-family: 'Bellota Text', sans-serif;
+  box-sizing: border-box;
+}
+
+.wrapper{
+    width: 1040px;
+
+      flex-shrink: 0;
+      margin: 0 auto;
+}
+
+.header {
+    background: #FFBF00;
+
+  &__wrapper{
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__list {
+    padding: 8px 0;
+    display: flex;
+    gap: 18px;
+  }
+
+  &__item {}
+
+  &__link {}
+
+  &__logo {
+    padding: 0 8px;
+    display: block;
+  }
+
+  &__button {
+    padding: 0 8px;
+    display: block;
+  }
+}
+
+.button {
+  &__img {}
+}
+
+.main {
+  &__blog {}
+}
+
+.blog {
+
+  &__wrapper{
+    padding-top: 16px;
+  }
+
+  &__title {
+    color: #000;
+      text-align: center;
+      font-family: Bellota Text;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 48px;
+      margin-bottom: 16px;
+      /* 100% */
+  }
+
+  &__list {
+    display: flex;
+    gap: 32px;
+  }
+
+  &__item {
+    display: flex;
+      padding: 16px;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      flex: 1 0 0;
+      background: #2274A5;
+  }
+
+  &__img {}
+
+  &__subtitle {
+    color: #FFF;
+      font-family: Bellota Text;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: -0.48px;
+  }
+
+  &__text {
+    color: #FFF;
+      font-family: Bellota Text;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: -0.48px;
+  }
+
+  &__next {
+    color: #FFF;
+      font-family: Bellota Text;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: -0.48px;
+  }
+}
+
+.next {
+  &__text {}
+
+  &__img {}
+}
+
+.mail {
+  &__title {
+    color: #000;
+      text-align: center;
+      font-family: Bellota Text;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 32px;
+      margin-bottom: 16px;
+      /* 100% */
+  }
+
+  &__wrapper{
+
+    width: 516px;
+      padding: 60px 0px;
+  }
+
+  &__form {
+    display: flex;
+    gap: 18px;
+  }
+
+  &__label {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+
+  &__text {
+    color: #000;
+      text-align: center;
+    width: 87px;
+      /* Paragraph/P3/Regular */
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      /* 125% */
+
+  }
+
+  &__input {
+
+      padding: 8px 16px;
+      align-items: center;
+      background: #FFBF00;
+      border: none;
+      width: 269px;
+      height: 100%;
+  }
+
+  &__button {
+    color: #000;
+      text-align: center;
+    
+      /* Paragraph/P2/Regular */
+      font-family: Inter;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px;
+      /* 166.667% */
+      letter-spacing: -0.36px;
+
+      padding: 8px;
+            letter-spacing: -0.32px;
+              border: 1px solid #000000;
+  }
+}

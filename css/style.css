@@ -1,0 +1,346 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Bellota+Text:wght@400;700&family=Inter&display=swap");
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  font-size: inherit;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+ul {
+  list-style: none;
+}
+
+/**
+ * Сброс стилей у кнопки.
+ * Придётся немного поработать, чтобы получить нейтральный вид.
+*/
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  /* отображаем курсор в виде руки при наведении; некоторые
+  считают, что необходимо оставлять стрелочный вид для кнопок */
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+*, *::after,
+*::before {
+  font-family: "Bellota Text", sans-serif;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 1040px;
+  flex-shrink: 0;
+  margin: 0 auto;
+}
+
+.header {
+  background: #FFBF00;
+}
+.header__wrapper {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__list {
+  padding: 8px 0;
+  display: flex;
+  gap: 18px;
+}
+.header__logo {
+  padding: 0 8px;
+  display: block;
+}
+.header__button {
+  padding: 0 8px;
+  display: block;
+}
+
+.blog__wrapper {
+  padding-top: 16px;
+}
+.blog__title {
+  color: #000;
+  text-align: center;
+  font-family: Bellota Text;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  margin-bottom: 16px;
+  /* 100% */
+}
+.blog__list {
+  display: flex;
+  gap: 32px;
+}
+.blog__item {
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  flex: 1 0 0;
+  background: #2274A5;
+}
+.blog__subtitle {
+  color: #FFF;
+  font-family: Bellota Text;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.48px;
+}
+.blog__text {
+  color: #FFF;
+  font-family: Bellota Text;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.48px;
+}
+.blog__next {
+  color: #FFF;
+  font-family: Bellota Text;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.48px;
+}
+
+.mail__title {
+  color: #000;
+  text-align: center;
+  font-family: Bellota Text;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  margin-bottom: 16px;
+  /* 100% */
+}
+.mail__wrapper {
+  width: 516px;
+  padding: 60px 0px;
+}
+.mail__form {
+  display: flex;
+  gap: 18px;
+}
+.mail__label {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.mail__text {
+  color: #000;
+  text-align: center;
+  width: 87px;
+  /* Paragraph/P3/Regular */
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  /* 125% */
+}
+.mail__input {
+  padding: 8px 16px;
+  align-items: center;
+  background: #FFBF00;
+  border: none;
+  width: 269px;
+  height: 100%;
+}
+.mail__button {
+  color: #000;
+  text-align: center;
+  /* Paragraph/P2/Regular */
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  /* 166.667% */
+  letter-spacing: -0.36px;
+  padding: 8px;
+  letter-spacing: -0.32px;
+  border: 1px solid #000000;
+}/*# sourceMappingURL=style.css.map */
